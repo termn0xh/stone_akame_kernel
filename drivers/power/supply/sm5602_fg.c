@@ -1551,7 +1551,7 @@ static int fg_get_property(struct power_supply *psy, enum power_supply_property 
 
 	case POWER_SUPPLY_PROP_CHARGE_FULL_DESIGN:
 		//val->intval = fg_read_fcc(sm) * 1000; //uAh
-		val->intval = 5000 * 1000; //uAh : Fixed 5000mAh
+		val->intval = 4900000; //uAh : Fixed 4900mAh
 		break;
 
 	case POWER_SUPPLY_PROP_CHARGE_COUNTER:
