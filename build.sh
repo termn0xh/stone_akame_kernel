@@ -88,7 +88,7 @@ make -j$(nproc --all) $MAKE_PARAMS INSTALL_MOD_PATH=modules INSTALL_MOD_STRIP=1 
 
 # Validate outputs
 kernel="out/arch/arm64/boot/Image"
-dts_dir="out/arch/arm64/boot/dts/vendor/qcom"
+dts_dir="out/arch/arm64/boot/dts/vendor/xiaomi"
 
 if [ -f "$kernel" ] && [ -d "$dts_dir" ]; then
     echo -e "\nKernel compiled successfully! Preparing to zip...\n"
